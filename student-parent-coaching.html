@@ -1,0 +1,834 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#815600","surface-container-low":"#edf5f7","surface-container":"#e7eff2","primary":"#002125","surface-container-highest":"#dce4e6","surface-bright":"#f2fbfd","secondary-fixed-dim":"#fbbb58","on-background":"#151d1f","surface-variant":"#dce4e6","on-primary-fixed":"#001f23","background":"#f2fbfd","surface-canvas":"#FAF8F5","surface-dim":"#d3dbde","on-secondary-fixed":"#291800","on-tertiary-fixed":"#271900","on-primary-fixed-variant":"#204d52","on-surface-variant":"#404849","secondary-fixed":"#ffddb1","on-primary":"#ffffff","on-tertiary-fixed-variant":"#5b4314","primary-fixed":"#bdebf1","surface-tint":"#39656a","inverse-on-surface":"#eaf2f5","border-subtle":"rgba(3, 56, 61, 0.08)","on-secondary-container":"#744c00","tertiary-container":"#442e02","on-surface":"#151d1f","inverse-surface":"#2a3234","surface-dark-glass":"rgba(3, 56, 61, 0.85)","error":"#ba1a1a","teal-deep":"#022326","on-secondary":"#ffffff","surface-glass":"rgba(255, 255, 255, 0.72)","outline-variant":"#c0c8c9","inverse-primary":"#a1ced4","on-error":"#ffffff","gold-light":"#F7D89B","primary-container":"#03383d","on-secondary-fixed-variant":"#624000","outline":"#717879","error-container":"#ffdad6","primary-fixed-dim":"#a1ced4","surface-container-lowest":"#ffffff","on-tertiary-container":"#b6955f","tertiary-fixed-dim":"#e5c187","on-error-container":"#93000a","tertiary-fixed":"#ffdeaa","gold-glow":"rgba(234, 172, 75, 0.18)","on-tertiary":"#ffffff","teal-muted":"#1E4F54","secondary-container":"#febe5b","on-primary-container":"#76a2a7","surface-container-high":"#e1eaec","tertiary":"#291a00","surface":"#f2fbfd"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-md":"1rem","space-lg":"1.75rem","space-sm":"0.5rem","space-xl":"3rem","margin-mobile":"1.25rem","space-xs":"0.25rem","margin":"3rem"},fontFamily:{"display-lg-mobile":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"display-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"]},fontSize:{"display-lg-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"500"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.06em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"title-lg":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}};</script><style>
+
+/* Praveen World: responsive navigation shared by all pages */
+.pw-menu-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;border:1px solid rgba(20,40,50,.16);border-radius:12px;background:rgba(255,255,255,.92);color:#15313b;cursor:pointer;z-index:60}
+.pw-menu-toggle svg{width:22px;height:22px;pointer-events:none}
+@media (max-width:1023px){
+  header{height:auto!important;min-height:0!important}
+  header>div:first-child{height:auto!important;min-height:72px;max-width:100%!important;padding:10px 16px!important;display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:space-between!important;gap:8px 12px!important}
+  header>div:first-child>a,header>div:first-child>div:first-child{min-width:0;max-width:calc(100% - 58px)}
+  header img[alt*="Logo"]{max-height:44px;width:auto;max-width:64px;object-fit:contain}
+  header .pw-menu-toggle{display:inline-flex!important;margin-left:auto;flex:0 0 44px}
+  header nav:first-of-type{display:none!important;order:3!important;flex:0 0 100%!important;width:100%!important;max-width:100%!important;max-height: min(72vh,620px);overflow-y:auto!important;overscroll-behavior:contain;padding:12px!important;margin:0!important;border-top:1px solid rgba(20,40,50,.12);background:rgba(255,255,255,.98);border-radius:0 0 14px 14px;box-shadow:0 14px 24px rgba(0,0,0,.10);align-items:stretch!important;flex-direction:column!important;gap:4px!important}
+  header.pw-mobile-open nav:first-of-type{display:flex!important}
+  header nav:first-of-type>a,header nav:first-of-type>div>a{display:flex!important;align-items:center!important;justify-content:space-between!important;width:100%!important;min-height:44px;padding:10px 12px!important;white-space:normal!important;border-radius:9px}
+  header nav:first-of-type>div{position:static!important;width:100%!important;padding:0!important}
+  header nav:first-of-type>div>div{display:block!important;position:static!important;inset:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;max-height:none!important;overflow:visible!important;padding:8px 10px!important;margin:0 0 6px!important;box-shadow:none!important;border-radius:10px!important;background:rgba(245,248,248,.98)!important}
+  header nav:first-of-type>div>div a{display:flex!important;white-space:normal!important;min-height:40px;align-items:center}
+  header nav:first-of-type .grid{grid-template-columns:1fr!important}
+  header nav:first-of-type .group:hover>div{display:block!important}
+  header nav:first-of-type>div>div>div{max-width:100%!important}
+  header nav:first-of-type a{overflow-wrap:anywhere}
+}
+@media (max-width:380px){header>div:first-child{padding-left:12px!important;padding-right:12px!important}header img[alt*="Logo"]{max-width:48px}header .pw-menu-toggle{width:40px;height:40px;min-width:40px;flex-basis:40px}}
+
+</style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-border-subtle transition-all duration-300">
+  <div class="h-20 max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+    <a class="flex flex-col group text-left" href="index.html">
+      <span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold transition-colors group-hover:text-secondary">PRAVEEN WORLD</span>
+      <span class="font-label-sm text-label-sm tracking-[0.2em] text-secondary font-medium uppercase mt-0.5">REWIRE • RELEASE • TRANSFORM</span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-7">
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="index.html">Home</a>
+      
+      <!-- Programs Mega-Dropdown -->
+      <div class="relative group py-1">
+        <a class="group-hover:text-on-surface transition-colors inline-flex items-center gap-1 text-on-surface-variant" href="programs.html">
+          <span>Programs</span>
+          <span class="material-symbols-outlined text-[16px] text-outline transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-0 pt-2 hidden group-hover:block transition-all duration-200 min-w-[720px]">
+          <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_16px_40px_rgba(2,35,38,0.12)] border border-border-subtle grid grid-cols-3 gap-6">
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold border-b border-border-subtle pb-1">Modern Mind</span>
+              <a href="nlp-Coaching.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">NLP Coaching</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Cognitive reframing &amp; neural re-patterning</span>
+              </a>
+              <a href="hypnotherapy.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Clinical Hypnotherapy</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Theta-state subconscious resolution</span>
+              </a>
+              <a href="subconscious-mind-coaching.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Subconscious Mind</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Unraveling deep automatic loops</span>
+              </a>
+              <a href="emotional-release.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Emotional Release</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Somatic catharsis &amp; somatic unwinding</span>
+              </a>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold border-b border-border-subtle pb-1">Ancient Javanese</span>
+              <a href="javanese-magnetism.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Javanese Magnetism</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Bio-magnetic polarity &amp; aura clearing</span>
+              </a>
+              <a href="mesmerism.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Mesmerism &amp; Fascination</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Non-verbal gaze trance &amp; shock induction</span>
+              </a>
+              <a href="ilmu-gendam.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Ilmu Gendam Mastery</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Kejawen occult mind science &amp; defense</span>
+              </a>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold border-b border-border-subtle pb-1">Holistic Growth</span>
+              <a href="personal-growth.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Personal Growth</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Subconscious intentional manifestation</span>
+              </a>
+              <a href="holistic-wellness.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Energy &amp; Holistic</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Pranic flow &amp; meridian harmonization</span>
+              </a>
+              <a href="distance-healing.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Distance Healing</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Non-local remote bio-energy broadcast</span>
+              </a>
+            </div>
+            <div class="col-span-3 pt-3 border-t border-border-subtle flex justify-between items-center">
+              <a href="programs.html" class="font-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1 font-semibold uppercase tracking-wider">
+                <span>Explore All Programs &amp; Modalities</span>
+                <span class="material-symbols-outlined text-[16px]">east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Who We Help Dropdown (HIGHLIGHTED ACTIVE STATE) -->
+      <div class="relative group py-1">
+        <a class="inline-flex items-center gap-1 text-primary font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" href="who-we-help.html">
+          <span>Who We Help</span>
+          <span class="material-symbols-outlined text-[16px] text-secondary transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-0 pt-2 hidden group-hover:block transition-all duration-200 min-w-[320px]">
+          <div class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_16px_40px_rgba(2,35,38,0.12)] border border-border-subtle flex flex-col gap-1">
+            <a href="coaching-corporate-professionals.html" class="p-2.5 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Corporate Professionals</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">Burnout recovery &amp; boardroom poise</span>
+            </a>
+            <a href="coaching-entrepreneurs.html" class="p-2.5 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Entrepreneurs &amp; Founders</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">Overcoming revenue ceilings &amp; founder strain</span>
+            </a>
+            <a href="student-parent-coaching.html" class="p-2.5 rounded-lg bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Students &amp; Parents</span>
+              <span class="font-body-sm text-xs text-secondary font-medium">Academic anxiety &amp; family resonance</span>
+            </a>
+            <a href="investors-traders.html" class="p-2.5 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Investors &amp; Financial Traders</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">SEBI AP verified emotional trading discipline</span>
+            </a>
+            <div class="pt-2 mt-1 border-t border-border-subtle">
+              <a href="who-we-help.html" class="font-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1 font-semibold uppercase tracking-wider px-2 py-1">
+                <span>View All Client Profiles</span>
+                <span class="material-symbols-outlined text-[14px]">east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="approach.html">Our Approach</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="about.html">About</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="library.html">Resources</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md tracking-wider uppercase shadow-[0_4px_16px_rgba(234,172,75,0.22)] hover:bg-tertiary-container hover:text-on-tertiary transition-all duration-200 transform hover:scale-[1.02]" href="https://rzp.io/rzp/YZQ6QlB" target="_blank" rel="noopener noreferrer">Book Discovery Call</a>
+      <a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0" href="about.html">
+        <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+      </a>
+    </div>
+  </div>
+</header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow & Hero Immersion -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface-canvas pb-20 pt-10">
+<div class="pointer-events-none absolute -top-40 right-1/4 h-96 w-96 rounded-full bg-secondary-container/20 blur-3xl"></div>
+<div class="pointer-events-none absolute top-48 -left-20 h-80 w-80 rounded-full bg-primary-fixed/30 blur-3xl"></div>
+<div class="mx-auto max-w-[1280px] px-gutter">
+<!-- Top Breadcrumb / Micro-nav -->
+<div class="mb-8 flex items-center gap-2">
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-teal-muted hover:text-primary transition-colors" data-path="who-we-help" href="#">Who We Help</a>
+<span class="text-secondary/60 text-xs">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Student &amp; Parent Coaching</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Text Column -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2.5 self-start rounded-full bg-surface-container-highest px-4 py-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">psychology_alt</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Holistic Student Empowerment &amp; Harmonious Parenting</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight leading-tight">
+            Eliminate Exam Fear, Ignite <span class="italic font-normal text-secondary">Photographic Focus</span> &amp; Build Unbreakable Emotional Trust
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Empowering students to conquer academic pressure, digital distractions, and performance anxiety while guiding parents into compassionate, deeply connected mentors through Clinical NLP and Subconscious Reprogramming.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 rounded-full bg-primary-container px-7 py-3.5 font-title-md text-title-md text-on-primary shadow-lg shadow-primary-container/20 hover:scale-[1.02] hover:bg-teal-deep transition-all duration-200" data-path="contact" href="#">
+<span>Book a Family / Student Consultation</span>
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</a>
+<a class="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-6 py-3.5 font-title-md text-title-md text-on-surface hover:bg-surface-container-highest hover:text-primary transition-all" href="#pathways">
+<span>Explore Coaching Modules</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+</div>
+<!-- Trust Badges Strip -->
+<div class="grid grid-cols-3 gap-4 pt-6 mt-4 border-none">
+<div class="flex flex-col gap-1 rounded-xl bg-surface-container-lowest/80 p-4 shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">2,500+</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Students &amp; Aspirants Mentored</span>
+</div>
+<div class="flex flex-col gap-1 rounded-xl bg-surface-container-lowest/80 p-4 shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">100%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Exam Fear Dissolution Rate</span>
+</div>
+<div class="flex flex-col gap-1 rounded-xl bg-surface-container-lowest/80 p-4 shadow-sm backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">screen_lock_rotation</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">85%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Screen Addiction Overcome</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Bento / Atmospheric Layer -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto w-full max-w-md rounded-2xl bg-gradient-to-tr from-primary-container to-teal-muted p-2 shadow-2xl">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="h-96 w-full object-cover" data-alt="Serene Indian student deeply focused studying in a warm sunlit study sanctuary with books, soft botanical greens, and an aura of calm meditative clarity, professional editorial lifestyle photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYF4F_OpEkI6q-QToOQdOILRp67UW1ucE_Asknhj9-XvBZfqi2EcC8LR-iPeBOAtP-Zj5sfgyXU4KKCBq5fvEWTWMsBOMMTGk7E8bzm6t3-zv02skvXOpTrMKDHdojYvz2oi7uKreiVAEcOzWIJMKyszuqsuK9IH-vd8PjnGZ1OBY6ItDUNqDDpjIDOKy5vmTictu-ItWBs-222vnf8gqu5Funqiqy-6IHpWQvGZI">
+<!-- Floating Glass Micro-Card 1 -->
+<div class="absolute bottom-4 left-4 right-4 rounded-xl bg-surface-dark-glass p-4 backdrop-blur-xl shadow-xl">
+<div class="flex items-start gap-3 text-on-primary">
+<div class="rounded-full bg-secondary-container/20 p-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Targeted Subconscious Rewiring</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim leading-snug mt-0.5">
+                      "I cleared NEET after 2 failed attempts once Coach Praveen dismantled my subconscious blackout triggers."
+                    </p>
+<span class="mt-2 font-label-sm text-label-sm text-gold-light">— Aarav N., All-India Medical Aspirant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Accent Badge Overlap -->
+<div class="absolute -top-4 -right-4 flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-on-secondary shadow-lg">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Coach Praveen Singh</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Pathway Selector Anchor -->
+<div class="w-full bg-surface-container-low py-6 shadow-[inset_0_1px_4px_rgba(0,0,0,0.02)]" id="pathways">
+<div class="mx-auto max-w-[1280px] px-gutter flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary">Two Harmonized Journeys</span>
+<span class="hidden sm:inline-block h-4 w-px bg-outline-variant"></span>
+<span class="hidden sm:inline-block font-body-sm text-body-sm text-on-surface-variant">Choose your entry door or integrate both for maximum family synergy.</span>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-primary hover:bg-primary-container transition-all" href="#student-track">
+<span class="material-symbols-outlined text-[16px]">school</span>
+          Student Track
+        </a>
+<a class="inline-flex items-center gap-1.5 rounded-full bg-surface-container-highest px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:bg-surface-bright transition-all" href="#parent-track">
+<span class="material-symbols-outlined text-[16px]">family_restroom</span>
+          Parent Track
+        </a>
+</div>
+</div>
+</div>
+<!-- SECTION 1: FOR STUDENTS -->
+<section class="w-full bg-surface-canvas py-space-xl" id="student-track">
+<div class="mx-auto max-w-[1280px] px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col gap-3 max-w-3xl mb-12">
+<div class="inline-flex items-center gap-2 rounded-full bg-secondary-fixed/50 px-3.5 py-1 text-on-secondary-fixed self-start">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Specialized Track 01</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          For Students &amp; Competitive Exam Aspirants
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Tailored for ages 12 to 24+ and serious aspirants tackling IIT/JEE, NEET, UPSC, CA, SAT, and High-Stakes Board Exams where mental endurance dictates 80% of final rank.
+        </p>
+</div>
+<!-- Problem vs Breakthrough Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: The Friction Points -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<div class="rounded-2xl bg-surface-container-high p-6 flex flex-col gap-2">
+<span class="font-label-md text-label-md uppercase tracking-widest text-error flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+              The Subconscious Saboteurs
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High intelligence is crippled by physiological freeze responses and conditioned emotional fatigue:
+            </p>
+</div>
+<!-- Challenge 1 -->
+<div class="rounded-xl bg-surface-container-low p-5 shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[24px] text-secondary mt-0.5">blur_off</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-primary">Exam Blackouts &amp; Memory Blockades</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Knowing the syllabus intimately in the bedroom, yet freezing upon sitting in the test hall due to sympathetic nervous system spikes.
+                </p>
+</div>
+</div>
+</div>
+<!-- Challenge 2 -->
+<div class="rounded-xl bg-surface-container-low p-5 shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[24px] text-secondary mt-0.5">phonelink_erase</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-primary">Procrastination &amp; Social Media Addiction</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Compulsive short-form screen scrolling used as a numbing mechanism to escape suffocating expectations, resulting in late-night guilt spirals.
+                </p>
+</div>
+</div>
+</div>
+<!-- Challenge 3 -->
+<div class="rounded-xl bg-surface-container-low p-5 shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[24px] text-secondary mt-0.5">sentiment_dissatisfied</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-primary">Severe Imposter Syndrome &amp; Self-Doubt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  "What if I let my parents down?" internal loop constantly consuming mental RAM needed for complex logic and analytical retention.
+                </p>
+</div>
+</div>
+</div>
+<!-- Challenge 4 -->
+<div class="rounded-xl bg-surface-container-low p-5 shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-start gap-3.5">
+<span class="material-symbols-outlined text-[24px] text-secondary mt-0.5">bedtime_off</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-primary">Disrupted Sleep &amp; Chronic Lethargy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Restless midnight overthinking leading to zero REM consolidation, causing slow cognitive processing during daytime mock exams.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: The Transformation Matrix -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="rounded-2xl bg-primary p-8 text-on-primary shadow-xl relative overflow-hidden">
+<div class="pointer-events-none absolute -right-16 -bottom-16 h-64 w-64 rounded-full bg-secondary-container/10 blur-2xl"></div>
+<div class="flex items-center justify-between pb-6 border-b border-primary-container/80">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Clinical Methodology</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mt-1">Subconscious Breakthrough Architecture</h3>
+</div>
+<span class="material-symbols-outlined text-[36px] text-secondary-fixed">neurology</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+<!-- Tool 1 -->
+<div class="flex flex-col gap-2 rounded-xl bg-primary-container/50 p-5 backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">anchor</span>
+<span class="font-title-md text-title-md text-on-primary">Memory Recall Anchoring</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/90 leading-relaxed">
+                  Neuro-Linguistic anchors programmed to trigger instantaneous associative recall under high clock stress during examination halls.
+                </p>
+</div>
+<!-- Tool 2 -->
+<div class="flex flex-col gap-2 rounded-xl bg-primary-container/50 p-5 backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span class="font-title-md text-title-md text-on-primary">NLP Fast Phobia Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/90 leading-relaxed">
+                  Neutralizes negative visceral triggers attached to specific subjects, question sheets, and invigilator authority within 1-2 focused sessions.
+                </p>
+</div>
+<!-- Tool 3 -->
+<div class="flex flex-col gap-2 rounded-xl bg-primary-container/50 p-5 backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+<span class="font-title-md text-title-md text-on-primary">Alpha State Study Conditioning</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/90 leading-relaxed">
+                  Training the mind to slip from agitated Beta waves (14-30Hz) into relaxed receptive Alpha waves (8-12Hz) for 300% faster information encoding.
+                </p>
+</div>
+<!-- Tool 4 -->
+<div class="flex flex-col gap-2 rounded-xl bg-primary-container/50 p-5 backdrop-blur-md">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+<span class="font-title-md text-title-md text-on-primary">Inner Stoic Resilience</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/90 leading-relaxed">
+                  Dissolves comparative self-worth, instilling unwavering emotional sovereignty regardless of peer ranks or mock test fluctuations.
+                </p>
+</div>
+</div>
+<!-- Brain State Visual Diagram Inline -->
+<div class="mt-8 rounded-xl bg-teal-deep/80 p-5 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Cognitive Shift Metric</span>
+<span class="font-title-md text-title-md text-on-primary font-semibold">Beta Agitation → Alpha Flow State</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim/75">Measured via mock test performance composure</span>
+</div>
+<div class="w-full md:w-48 flex items-center justify-center">
+<!-- Inline Minimal Wave Chart -->
+<svg class="w-full h-10 text-secondary-container" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 160 40">
+<path class="opacity-30" d="M0,20 Q10,5 20,20 T40,20 T60,20 T80,20 T100,20 T120,20 T140,20 T160,20"></path>
+<path class="opacity-90" d="M0,25 Q15,10 30,25 T60,25 T90,25 T120,25 T150,25"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="flex items-center justify-between rounded-xl bg-surface-container p-5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">contact_support</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Facing an impending entrance exam within 30-90 days?
+              </p>
+</div>
+<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-on-surface font-semibold flex items-center gap-1" data-path="contact" href="#">
+              Priority Student Intake →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: FOR PARENTS -->
+<section class="w-full bg-surface-container-low py-space-xl" id="parent-track">
+<div class="mx-auto max-w-[1280px] px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col gap-3 max-w-3xl mb-12">
+<div class="inline-flex items-center gap-2 rounded-full bg-secondary-container/40 px-3.5 py-1 text-on-secondary-container self-start">
+<span class="material-symbols-outlined text-[16px]">family_restroom</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Specialized Track 02</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          For Parents: Conscious Guidance &amp; Communication Mastery
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Shift from unintentional pressure and anxious surveillance into an unwavering sanctuary of unconditional support, active listening, and generational bonding.
+        </p>
+</div>
+<!-- Bento Grid for Parents -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Parent Card 1 -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface p-7 shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="rounded-full bg-surface-container-high p-3 text-secondary">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Core Dilemma</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">The Silent Generational Wall</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Every inquiry into studies is perceived as an interrogation. Conversations collapse into defensive doors slamming, monosyllabic replies, or emotional withdrawal.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block mb-1">Breakthrough Tool</span>
+<p class="font-body-sm text-body-sm text-primary font-medium">Non-Violent Linguistic Pacing &amp; Neuro-Attunement</p>
+</div>
+</div>
+<!-- Parent Card 2 -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface p-7 shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="rounded-full bg-surface-container-high p-3 text-secondary">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Core Dilemma</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Unconscious Anxiety Transference</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Parents' own fears regarding societal security, Sharma-ji's son's ranking, or economic future unknowingly infect the child's nervous system, multiplying panic.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block mb-1">Breakthrough Tool</span>
+<p class="font-body-sm text-body-sm text-primary font-medium">Parental Emotional Cleansing &amp; Sovereignty Coaching</p>
+</div>
+</div>
+<!-- Parent Card 3 -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface p-7 shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="rounded-full bg-surface-container-high p-3 text-secondary">
+<span class="material-symbols-outlined text-[24px]">mood_bad</span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Core Dilemma</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Managing Hormonal Volatility</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Feeling helpless when faced with unpredictable teenage anger outbursts, crying spells, or apathy, resulting in reactive parental shouting matches.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block mb-1">Breakthrough Tool</span>
+<p class="font-body-sm text-body-sm text-primary font-medium">De-escalation Anchors &amp; Home Energy Sanctuary Crafting</p>
+</div>
+</div>
+</div>
+<!-- Parental Wisdom Banner -->
+<div class="mt-12 rounded-2xl bg-surface-container-highest p-8 flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-5">
+<div class="h-16 w-16 shrink-0 rounded-full bg-primary flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[32px]">favorite</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">A Child Free from Parental Fear Performs with Natural Brilliance</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+              When home transforms from an inspection center into a psychological refuge, grades and cognitive retention naturally elevate by 30% to 50%.
+            </p>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-2 rounded-full bg-secondary px-6 py-3 font-title-md text-title-md text-on-secondary shadow-md hover:bg-secondary-container hover:text-on-secondary-container transition-all" data-path="contact" href="#">
+<span>Consult as Parents</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS / PROOF MATRIX -->
+<section class="w-full bg-surface py-space-xl">
+<div class="mx-auto max-w-[1280px] px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="flex flex-col gap-2 max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Transformational Proof</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Relief for Families, Triumph for Aspirants</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Real breakthroughs documented across competitive examinations and family dining tables.</p>
+</div>
+<div class="flex items-center gap-2 rounded-full bg-surface-container-high px-4 py-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">star</span>
+<span class="font-title-md text-title-md text-primary font-bold">4.9 / 5.0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Google Verified Reviews)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Review 1: Student IIT-JEE -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-low p-6 shadow-sm">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary">"From Panic Attacks in Mock Tests to AIR 680"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "Every time I opened the physics numericals, my throat tightened and my brain blanked out. Coach Praveen ran the NLP fast phobia technique on me and anchored my breathing. In the final exam, I felt like I was meditating. My parents and I are forever indebted."
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-3 pt-4 border-t border-surface-container-highest">
+<div class="h-10 w-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm">
+              DK
+            </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-body-md text-primary font-bold">Devansh Khandelwal</span>
+<span class="font-body-sm text-body-sm text-secondary">IIT-JEE Advanced Qualifier (AIR 680)</span>
+</div>
+</div>
+</div>
+<!-- Review 2: Relieved Mother -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-low p-6 shadow-sm">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary">"Peace Has Returned to Our Dinner Table"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "We were terrified for our 16-year-old daughter. She was locked in her room 14 hours a day on Instagram reels, snapping at every meal. Coach Praveen coached both of us together. We stopped interrogating, she stopped rebelling, and her grades jumped from 58% to 89% naturally."
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-3 pt-4 border-t border-surface-container-highest">
+<div class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-sm">
+              RM
+            </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-body-md text-primary font-bold">Ritu &amp; Sanjay Malhotra</span>
+<span class="font-body-sm text-body-sm text-secondary">Parents of Grade 11 Student, New Delhi</span>
+</div>
+</div>
+</div>
+<!-- Review 3: UPSC Aspirant -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-low p-6 shadow-sm">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary">"Mastered Long-Hour Focus Without Burnout"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "Preparing for civil services for 3 years had destroyed my sleep cycle. Praveen sir taught me subconscious Alpha state entry and self-hypnosis resets. My 10-hour daily reading retention improved tenfold, and the constant fear of failure dissolved into deep quiet conviction."
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-3 pt-4 border-t border-surface-container-highest">
+<div class="h-10 w-10 rounded-full bg-teal-muted text-on-primary flex items-center justify-center font-bold text-sm">
+              AS
+            </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-body-md text-primary font-bold">Ananya Sharma</span>
+<span class="font-body-sm text-body-sm text-secondary">UPSC CSE Interview Candidate</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STRUCTURED COACHING PACKAGES -->
+<section class="w-full bg-surface-container-highest/60 py-space-xl">
+<div class="mx-auto max-w-[1280px] px-gutter">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Structured Interventions</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2">Targeted Coaching Protocols</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Clinical hypnotherapy, NLP techniques, and compassionate family mediation designed for measurable behavioral results.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<!-- Package 1: Peak Exam Performance Protocol -->
+<div class="flex flex-col justify-between rounded-3xl bg-surface p-8 shadow-lg relative overflow-hidden transition-all hover:scale-[1.01]">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<span class="rounded-full bg-primary-fixed/40 px-3.5 py-1 font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Rapid 4-Session Immersion</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">timer</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Peak Exam Performance Protocol</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Specifically formulated for students with upcoming board or competitive exams who need urgent eradication of test panic and focus scatteredness.
+            </p>
+<ul class="flex flex-col gap-3 py-2">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Session 1:</strong> Rapid Root-Cause Panic Dissolution via Clinical NLP</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Session 2:</strong> Subconscious Memory Trigger Anchoring &amp; Exam Hall Visualization</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Session 3:</strong> Digital Distraction Elimination &amp; Focus Flow State Training</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Session 4:</strong> Deep Sleep Hypnotherapy Audio Installation &amp; Resilience Lock</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container flex flex-col gap-3">
+<a class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 font-title-md text-title-md text-on-primary hover:bg-teal-deep transition-all" data-path="contact" href="#">
+<span>Enroll Student for Protocol</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<span class="font-body-sm text-body-sm text-center text-on-surface-variant">1-on-1 Confidential Online Video or Clinic Sessions</span>
+</div>
+</div>
+<!-- Package 2: Parent-Teen Bridge Program -->
+<div class="flex flex-col justify-between rounded-3xl bg-primary-container p-8 text-on-primary shadow-xl relative overflow-hidden transition-all hover:scale-[1.01]">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<span class="rounded-full bg-secondary-container px-3.5 py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-secondary-container font-bold">Family Transformation Track</span>
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">diversity_1</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary">Parent-Teen Bridge Program</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim">
+              A comprehensive 6-week joint realignment that dissolves long-standing friction, restores genuine laughter, and aligns parental ambition with student happiness.
+            </p>
+<ul class="flex flex-col gap-3 py-2 text-primary-fixed-dim">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary"><strong>2 Dedicated Teen Sessions:</strong> Safe emotional release &amp; identity clarity</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary"><strong>2 Dedicated Parent Sessions:</strong> Unconscious projection decoding &amp; linguistic mastery</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary"><strong>2 Joint Harmonization Sessions:</strong> Mediated pacts, mutual respect anchors</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary"><strong>Continuous Support:</strong> Direct WhatsApp emergency helpline for escalations</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-6 border-t border-primary/50 flex flex-col gap-3">
+<a class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-secondary text-on-secondary px-6 py-3.5 font-title-md text-title-md hover:bg-secondary-container hover:text-on-secondary-container transition-all" data-path="contact" href="#">
+<span>Apply for Family Bridge Program</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+<span class="font-body-sm text-body-sm text-center text-primary-fixed-dim/75">Strictly Limited Intake for High-Touch Quality</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COMPREHENSIVE FAQ SECTION -->
+<section class="w-full bg-surface-canvas py-space-xl">
+<div class="mx-auto max-w-[880px] px-gutter">
+<div class="flex flex-col items-center text-center mb-12">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Clarity &amp; Questions</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Transparent insights for students and conscious guardians.</p>
+</div>
+<div class="flex flex-col gap-4">
+<!-- FAQ Item 1 -->
+<div class="rounded-2xl bg-surface p-6 shadow-sm">
+<h4 class="font-title-lg text-title-lg text-primary flex items-center justify-between cursor-pointer">
+<span>What age group is this coaching best suited for?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            Our student protocols are meticulously calibrated for individuals between ages 12 and 24+, encompassing high school students, board exam candidates, and competitive exam test-takers (IIT, NEET, UPSC, CA, SAT, GMAT). The parent track is open to any guardian seeking deeper attunement with their child.
+          </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="rounded-2xl bg-surface p-6 shadow-sm">
+<h4 class="font-title-lg text-title-lg text-primary flex items-center justify-between cursor-pointer">
+<span>Can online sessions via Zoom achieve the same results as in-person?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            Yes, absolutely. Over 70% of our successful student rankers work with Coach Praveen virtually across India, Dubai, Singapore, the UK, and the USA. Clinical hypnotherapy and NLP focus on vocal pacing, auditory anchoring, and internal mental representations, which transmit with exquisite clarity over high-definition audio/video.
+          </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="rounded-2xl bg-surface p-6 shadow-sm">
+<h4 class="font-title-lg text-title-lg text-primary flex items-center justify-between cursor-pointer">
+<span>Will student disclosures remain strictly confidential from parents?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            Complete confidentiality is the bedrock of our breakthrough results. Students are given a sacred, zero-judgment sanctuary where they can voice anxieties, guilt, or confusion. We only share high-level progress frameworks and constructive parenting advice without breaching the student’s trust.
+          </p>
+</div>
+<!-- FAQ Item 4 -->
+<div class="rounded-2xl bg-surface p-6 shadow-sm">
+<h4 class="font-title-lg text-title-lg text-primary flex items-center justify-between cursor-pointer">
+<span>What if my teenager refuses to attend coaching?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            This is extremely common. In such cases, we begin by coaching the parents first. By shifting how you communicate and respond at home, the domestic emotional charge softens. In almost every case, once the child observes the parent becoming calmer and more empathetic, their curiosity is sparked and they willingly step forward for their own discovery session.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM WHATSAPP & SCHEDULING ACTION BANNER -->
+<section class="w-full bg-primary text-on-primary py-space-xl relative overflow-hidden">
+<div class="pointer-events-none absolute left-10 top-0 h-96 w-96 rounded-full bg-secondary/10 blur-3xl"></div>
+<div class="pointer-events-none absolute right-0 bottom-0 h-80 w-80 rounded-full bg-primary-container/40 blur-2xl"></div>
+<div class="mx-auto max-w-[1280px] px-gutter relative z-10">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-10 rounded-3xl bg-primary-container/60 p-8 lg:p-12 backdrop-blur-md shadow-2xl">
+<div class="flex flex-col gap-4 max-w-2xl">
+<div class="inline-flex items-center gap-2 rounded-full bg-secondary px-3.5 py-1 text-on-secondary self-start font-label-sm text-label-sm uppercase tracking-wider font-bold">
+            Direct Sanctuary Desk
+          </div>
+<h3 class="font-headline-lg text-headline-lg text-on-primary leading-tight">
+            Give Your Child the Gift of an Unshakable Mind &amp; a Peaceful Home
+          </h3>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+            Connect directly with Coach Praveen’s intake desk for an assessment call. We will diagnose the core friction points and map the fastest route to academic calm and familial warmth.
+          </p>
+<div class="flex items-center gap-6 pt-2 font-body-sm text-body-sm text-primary-fixed-dim">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">schedule</span>
+              Next Intake: Current Academic Cycle
+            </span>
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified_user</span>
+              100% Confidential
+            </span>
+</div>
+</div>
+<!-- Action Buttons Column -->
+<div class="flex flex-col gap-4 w-full sm:w-auto shrink-0">
+<a class="inline-flex items-center justify-center gap-2 rounded-full bg-secondary px-8 py-4 font-title-lg text-title-lg text-on-secondary shadow-xl shadow-secondary/20 hover:scale-[1.02] hover:bg-secondary-container hover:text-on-secondary-container transition-all" data-path="contact" href="#">
+<span>Schedule Discovery Call</span>
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 rounded-full bg-surface-dark-glass px-8 py-4 font-title-lg text-title-lg text-on-primary hover:bg-surface-container-low hover:text-primary transition-all" href="https://wa.me/919719305125" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">chat</span>
+<span>WhatsApp: +91 97193 05125</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg"><div class="max-w-[1280px] mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-space-xl"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="Image from https://praveenworld.com/assets/images/logo-praveen-world-202x152.png" class="h-9 w-auto object-contain" src="assets/images/praveen-world-logo.png"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight leading-none">PRAVEEN WORLD</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase mt-0.5">REWIRE • RELEASE • TRANSFORM</span></div></div><p class="font-headline-sm text-headline-sm italic text-secondary-fixed mt-1">Change Your Mind, Change Your Life.</p><p class="font-body-sm text-body-sm text-primary-fixed-dim/80 leading-relaxed">Sanctuary of subconscious mastery, transformational NLP, clinical hypnotherapy, and ancient wisdom engineered for elevated human performance.</p><div class="flex flex-col gap-1.5 pt-1"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim font-bold">Core Modalities</span><p class="font-body-sm text-body-sm text-primary-fixed-dim/70">Clinical Hypnotherapy • Neuro-Linguistic Programming • Subconscious Blueprinting • Kundalini Kriya</p></div><div class="flex items-center gap-2.5 pt-2 flex-wrap"><a aria-label="Facebook" class="w-9 h-9 rounded-full flex items-center justify-center text-on-primary hover:scale-110 transition-transform shadow-md" href="https://www.facebook.com/PraveenWorldNLP" rel="noopener noreferrer" style="background-color: #1877F2;" target="_blank"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a><a aria-label="Instagram" class="w-9 h-9 rounded-full flex items-center justify-center text-on-primary hover:scale-110 transition-transform shadow-md" href="https://www.instagram.com/PraveenWorldNLP" rel="noopener noreferrer" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);" target="_blank"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a aria-label="YouTube" class="w-9 h-9 rounded-full flex items-center justify-center text-on-primary hover:scale-110 transition-transform shadow-md" href="https://www.youtube.com/@PraveenWorldNLP?sub_confirmation=1" rel="noopener noreferrer" style="background-color: #FF0000;" target="_blank"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a><a aria-label="X" class="w-9 h-9 rounded-full flex items-center justify-center text-on-primary hover:scale-110 transition-transform shadow-md" href="https://x.com/copraveenworld" rel="noopener noreferrer" style="background-color: #000000;" target="_blank"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a><a aria-label="WhatsApp" class="w-9 h-9 rounded-full flex items-center justify-center text-on-primary hover:scale-110 transition-transform shadow-md" href="https://wa.me/919719305125" rel="noopener noreferrer" style="background-color: #25D366;" target="_blank"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg></a><a aria-label="Telegram" class="w-9 h-9 rounded-full flex items-center justify-center text-on-primary hover:scale-110 transition-transform shadow-md" href="https://t.me/PraveenWorldNLP" rel="noopener noreferrer" style="background-color: #24A1DE;" target="_blank"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg></a></div></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed-dim font-bold">Transformational Programs</span><nav class="flex flex-col gap-2" data-active-classes="text-secondary font-bold"><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="programs" href="#">Subconscious Reprogramming</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="programs" href="#">Clinical NLP Coaching</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="programs" href="#">Hypnotherapy &amp; Deep Trance</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="programs" href="#">Inner Child &amp; Shadow Work</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="our-approach" href="#">Ancient Wisdom &amp; Breathwork</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="resources" href="#">Guided Meditations &amp; Mantras</a><a class="font-body-sm text-body-sm text-secondary hover:text-secondary-fixed font-semibold pt-1 transition-colors" data-path="programs" href="#">Explore All Programs →</a></nav></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed-dim font-bold">Who We Help</span><nav class="flex flex-col gap-2" data-active-classes="text-secondary font-bold"><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="corporate-professionals" href="#">Corporate Professionals</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="entrepreneurs" href="#">Entrepreneurs &amp; Founders</a><a aria-current="page" class="transition-colors text-secondary font-bold font-body-sm text-body-sm" data-path="students-parents" href="#">Student &amp; Parent Coaching</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="investors-traders" href="#">Investors &amp; Traders</a><a class="font-body-sm text-body-sm text-secondary hover:text-secondary-fixed font-semibold pt-1 transition-colors" data-path="who-we-help" href="#">View All Impact Tracks →</a></nav></div><div class="flex flex-col gap-4"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed-dim font-bold">Sanctuary Connect</span><div class="flex flex-col gap-2.5"><a class="font-body-sm text-body-sm text-primary-fixed-dim/80 hover:text-on-primary flex items-center gap-2 transition-colors" href="mailto:contact@praveenworld.com"><span class="material-symbols-outlined text-[16px] text-secondary">alternate_email</span>contact@praveenworld.com</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/80 hover:text-on-primary flex items-center gap-2 transition-colors" href="mailto:support@praveenworld.com"><span class="material-symbols-outlined text-[16px] text-secondary">mail</span>support@praveenworld.com</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/80 hover:text-on-primary flex items-center gap-2 transition-colors" href="https://wa.me/919719305125" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[16px] text-secondary">call</span>+91 97193 05125</a></div><div class="pt-2 flex flex-col gap-2.5"><a class="inline-flex items-center justify-center gap-2 font-label-md text-label-md uppercase tracking-wider bg-secondary text-on-secondary px-5 py-3 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md" href="https://rzp.io/rzp/YZQ6QlB" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px]">payments</span>Book via Razorpay</a><a class="inline-flex items-center justify-center gap-2 font-label-sm text-label-sm uppercase tracking-wider border border-primary-container/80 text-primary-fixed-dim px-4 py-2 rounded-full hover:bg-primary-container hover:text-on-primary transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[16px]">calendar_month</span>Schedule Consultation</a></div></div></div><div class="pt-space-md border-t border-primary-container/60 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-primary-fixed-dim/60"><p>© 2025 Praveen World. All Rights Reserved. Mindset Mastery &amp; Inner Elevation.</p><nav class="flex flex-wrap items-center gap-6" data-active-classes="text-on-primary underline"><a class="hover:text-on-primary transition-colors" data-path="privacy-policy" href="privacy-policy.html">Privacy Policy</a><a class="hover:text-on-primary transition-colors" data-path="terms-conditions" href="terms-conditions.html">Terms &amp; Conditions</a><a class="hover:text-on-primary transition-colors" data-path="refund-return-policy" href="refund-return-policy.html">Refund &amp; Return Policy</a></nav></div></div></footer>
+
+<div id="yj7oe1i" style="display: none;"></div>
+
+<div id="yj7oe1i" style="display: none;"></div>
+
+
+
+<script>
+(function(){
+  function initPraveenResponsiveHeaders(){
+    document.querySelectorAll('header').forEach(function(header,index){
+      var nav=header.querySelector('nav');
+      var row=header.firstElementChild;
+      if(!nav||!row||header.querySelector('.pw-menu-toggle')) return;
+      var button=document.createElement('button');
+      button.type='button'; button.className='pw-menu-toggle';
+      button.setAttribute('aria-label','Open navigation menu');
+      button.setAttribute('aria-expanded','false');
+      button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
+      button.addEventListener('click',function(){
+        var open=header.classList.toggle('pw-mobile-open');
+        button.setAttribute('aria-expanded',open?'true':'false');
+        button.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+        button.innerHTML=open?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m18 6-12 12M6 6l12 12"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
+      });
+      row.insertBefore(button,nav);
+      nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){if(window.matchMedia('(max-width: 1023px)').matches){header.classList.remove('pw-mobile-open');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation menu');button.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';}});});
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initPraveenResponsiveHeaders); else initPraveenResponsiveHeaders();
+})();
+</script>
+</body></html>
