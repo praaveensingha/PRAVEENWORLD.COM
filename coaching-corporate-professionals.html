@@ -1,0 +1,627 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#815600","surface-container-low":"#edf5f7","surface-container":"#e7eff2","primary":"#002125","surface-container-highest":"#dce4e6","surface-bright":"#f2fbfd","secondary-fixed-dim":"#fbbb58","on-background":"#151d1f","surface-variant":"#dce4e6","on-primary-fixed":"#001f23","background":"#f2fbfd","surface-canvas":"#FAF8F5","surface-dim":"#d3dbde","on-secondary-fixed":"#291800","on-tertiary-fixed":"#271900","on-primary-fixed-variant":"#204d52","on-surface-variant":"#404849","secondary-fixed":"#ffddb1","on-primary":"#ffffff","on-tertiary-fixed-variant":"#5b4314","primary-fixed":"#bdebf1","surface-tint":"#39656a","inverse-on-surface":"#eaf2f5","border-subtle":"rgba(3, 56, 61, 0.08)","on-secondary-container":"#744c00","tertiary-container":"#442e02","on-surface":"#151d1f","inverse-surface":"#2a3234","surface-dark-glass":"rgba(3, 56, 61, 0.85)","error":"#ba1a1a","teal-deep":"#022326","on-secondary":"#ffffff","surface-glass":"rgba(255, 255, 255, 0.72)","outline-variant":"#c0c8c9","inverse-primary":"#a1ced4","on-error":"#ffffff","gold-light":"#F7D89B","primary-container":"#03383d","on-secondary-fixed-variant":"#624000","outline":"#717879","error-container":"#ffdad6","primary-fixed-dim":"#a1ced4","surface-container-lowest":"#ffffff","on-tertiary-container":"#b6955f","tertiary-fixed-dim":"#e5c187","on-error-container":"#93000a","tertiary-fixed":"#ffdeaa","gold-glow":"rgba(234, 172, 75, 0.18)","on-tertiary":"#ffffff","teal-muted":"#1E4F54","secondary-container":"#febe5b","on-primary-container":"#76a2a7","surface-container-high":"#e1eaec","tertiary":"#291a00","surface":"#f2fbfd"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-md":"1rem","space-lg":"1.75rem","space-sm":"0.5rem","space-xl":"3rem","margin-mobile":"1.25rem","space-xs":"0.25rem","margin":"3rem"},fontFamily:{"display-lg-mobile":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"display-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"]},fontSize:{"display-lg-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"500"}],"display-lg":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.06em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"title-lg":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-border-subtle transition-all duration-300">
+  <div class="h-20 max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+    <a class="flex flex-col group text-left" href="index.html">
+      <span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold transition-colors group-hover:text-secondary">PRAVEEN WORLD</span>
+      <span class="font-label-sm text-label-sm tracking-[0.2em] text-secondary font-medium uppercase mt-0.5">REWIRE • RELEASE • TRANSFORM</span>
+    </a>
+    <nav class="hidden xl:flex items-center gap-7">
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="index.html">Home</a>
+      
+      <!-- Programs Mega-Dropdown -->
+      <div class="relative group py-1">
+        <a class="group-hover:text-on-surface transition-colors inline-flex items-center gap-1 text-on-surface-variant" href="programs.html">
+          <span>Programs</span>
+          <span class="material-symbols-outlined text-[16px] text-outline transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-0 pt-2 hidden group-hover:block transition-all duration-200 min-w-[720px]">
+          <div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_16px_40px_rgba(2,35,38,0.12)] border border-border-subtle grid grid-cols-3 gap-6">
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold border-b border-border-subtle pb-1">Modern Mind</span>
+              <a href="nlp-Coaching.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">NLP Coaching</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Cognitive reframing &amp; neural re-patterning</span>
+              </a>
+              <a href="hypnotherapy.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Clinical Hypnotherapy</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Theta-state subconscious resolution</span>
+              </a>
+              <a href="subconscious-mind-coaching.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Subconscious Mind</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Unraveling deep automatic loops</span>
+              </a>
+              <a href="emotional-release.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Emotional Release</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Somatic catharsis &amp; somatic unwinding</span>
+              </a>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold border-b border-border-subtle pb-1">Ancient Javanese</span>
+              <a href="javanese-magnetism.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Javanese Magnetism</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Bio-magnetic polarity &amp; aura clearing</span>
+              </a>
+              <a href="mesmerism.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Mesmerism &amp; Fascination</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Non-verbal gaze trance &amp; shock induction</span>
+              </a>
+              <a href="ilmu-gendam.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Ilmu Gendam Mastery</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Kejawen occult mind science &amp; defense</span>
+              </a>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold border-b border-border-subtle pb-1">Holistic Growth</span>
+              <a href="personal-growth.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Personal Growth</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Subconscious intentional manifestation</span>
+              </a>
+              <a href="holistic-wellness.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Energy &amp; Holistic</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Pranic flow &amp; meridian harmonization</span>
+              </a>
+              <a href="distance-healing.html" class="p-2 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+                <span class="font-title-md text-sm text-primary font-semibold">Distance Healing</span>
+                <span class="font-body-sm text-xs text-on-surface-variant">Non-local remote bio-energy broadcast</span>
+              </a>
+            </div>
+            <div class="col-span-3 pt-3 border-t border-border-subtle flex justify-between items-center">
+              <a href="programs.html" class="font-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1 font-semibold uppercase tracking-wider">
+                <span>Explore All Programs &amp; Modalities</span>
+                <span class="material-symbols-outlined text-[16px]">east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Who We Help Dropdown (HIGHLIGHTED ACTIVE STATE) -->
+      <div class="relative group py-1">
+        <a class="inline-flex items-center gap-1 text-primary font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary" href="who-we-help.html">
+          <span>Who We Help</span>
+          <span class="material-symbols-outlined text-[16px] text-secondary transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-0 pt-2 hidden group-hover:block transition-all duration-200 min-w-[320px]">
+          <div class="bg-surface-container-lowest rounded-2xl p-4 shadow-[0_16px_40px_rgba(2,35,38,0.12)] border border-border-subtle flex flex-col gap-1">
+            <a href="coaching-corporate-professionals.html" class="p-2.5 rounded-lg bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Corporate Professionals</span>
+              <span class="font-body-sm text-xs text-secondary font-medium">Burnout recovery &amp; boardroom poise</span>
+            </a>
+            <a href="coaching-entrepreneurs.html" class="p-2.5 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Entrepreneurs &amp; Founders</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">Overcoming revenue ceilings &amp; founder strain</span>
+            </a>
+            <a href="student-parent-coaching.html" class="p-2.5 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Students &amp; Parents</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">Academic anxiety &amp; family resonance</span>
+            </a>
+            <a href="investors-traders.html" class="p-2.5 rounded-lg hover:bg-surface-container transition-colors text-left flex flex-col">
+              <span class="font-title-md text-sm text-primary font-semibold">Investors &amp; Financial Traders</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">SEBI AP verified emotional trading discipline</span>
+            </a>
+            <div class="pt-2 mt-1 border-t border-border-subtle">
+              <a href="who-we-help.html" class="font-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1 font-semibold uppercase tracking-wider px-2 py-1">
+                <span>View All Client Profiles</span>
+                <span class="material-symbols-outlined text-[14px]">east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="approach.html">Our Approach</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="about.html">About</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="library.html">Resources</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-1" href="contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md tracking-wider uppercase shadow-[0_4px_16px_rgba(234,172,75,0.22)] hover:bg-tertiary-container hover:text-on-tertiary transition-all duration-200 transform hover:scale-[1.02]" href="https://rzp.io/rzp/YZQ6QlB" target="_blank" rel="noopener noreferrer">Book Discovery Call</a>
+      <a class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0" href="about.html">
+        <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+      </a>
+    </div>
+  </div>
+</header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Field -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[380px] bg-secondary-fixed/20 blur-[130px] rounded-full pointer-events-none"></div>
+<div class="absolute top-48 -left-32 w-[420px] h-[420px] bg-primary-fixed-dim/30 blur-[120px] rounded-full pointer-events-none"></div>
+<!-- Hero Section -->
+<section class="relative max-w-[1280px] mx-auto px-gutter pt-12 md:pt-20 pb-20 md:pb-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Hero Text Block -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-high/70 shadow-sm backdrop-blur-md mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Executive Mind Coaching &amp; Leadership Transformation</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-[50px] lg:leading-[58px] text-primary tracking-tight font-serif">
+            Master High-Pressure Leadership, <span class="italic font-normal text-secondary">Dissolve Burnout</span> &amp; Restore Mental Sovereignty
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-6 leading-relaxed max-w-2xl">
+            A neuro-linguistic and energetic framework engineered for CXOs, corporate leaders, directors, and ambitious professionals facing severe decision fatigue, impostor syndrome, workplace anxiety, and executive exhaustion.
+          </p>
+<div class="flex flex-wrap items-center gap-4 mt-8 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 font-label-md text-label-md tracking-wider uppercase bg-primary-container text-on-primary px-7 py-3.5 rounded-full shadow-[0_12px_28px_rgba(3,56,61,0.22)] hover:scale-[1.02] hover:bg-teal-deep transition-all duration-200" data-path="contact" href="contact.html">
+<span>Book an Executive Discovery Session</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-label-md text-label-md tracking-wider uppercase text-primary px-6 py-3.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors" href="#methodology">
+<span>Explore Architecture</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+</div>
+<!-- Trust Badges Strip -->
+<div class="grid grid-cols-3 gap-4 pt-10 mt-10 border-t-0 w-full max-w-xl">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-serif">12+ Years</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Executive Mentorship</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-serif">1,500+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Leaders Coached</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-serif">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Strict Confidentiality</span>
+</div>
+</div>
+</div>
+<!-- Hero Editorial Showcase Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p-4 shadow-[0_20px_50px_rgba(0,33,37,0.08)]">
+<div class="relative h-[440px] w-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Intense high-level executive leader in deep contemplation looking through high-rise boardroom glass overlooking a skyline at twilight, cinematic moody teal tones and warm amber ambient light, fine art portrait photography, tranquil yet commanding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXb11biyNp0TD5N46BfGwqgjP_aoT8Gq7JuCqTVQo0VW4q0pG6xJGX0SpboCCYOmoagPfPZVvfJinqQo-Y0aD2pfeCdNlsQrASxK4MznmglHOpusTga02LncNDOgxF1kTPX4MV61BedQkTGyJANRVjf9j8Die4ui6nA3HUWgawhgim--NNLSSQ7balM0XETa-nmUyHwNgpUrXzCO5wuZ8NXn8gaUgi9fZIUQh7dLY">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-on-primary">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Private Sanctuary Protocol</span>
+</div>
+<p class="font-headline-sm text-headline-sm font-serif italic text-white/95 leading-snug">
+                  "Sovereignty is not the absence of pressure, but the inner calm that renders pressure powerless."
+                </p>
+<div class="flex items-center justify-between mt-3 pt-3 border-t-0 text-white/70">
+<span class="font-body-sm text-body-sm">Praveen Singh, Master NLP &amp; Executive Coach</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary-fixed-dim">Level IV NLP</span>
+</div>
+</div>
+</div>
+<!-- Floating Micro Accent -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-low/95 backdrop-blur-xl p-4 rounded-xl shadow-lg flex items-center gap-3.5 max-w-[280px]">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary leading-tight">Vagus Nerve Reset</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate autonomic release</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Corporate Diagnostics Section -->
+<section class="w-full bg-surface-container-low py-20 md:py-28">
+<div class="max-w-[1280px] mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-3">Diagnostic Baseline</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-serif tracking-tight">
+            The Silent Attrition of the Executive Mind
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 leading-relaxed">
+            Conventional executive coaching handles tactical KPIs. We address the silent neuro-somatic collapse occurring beneath the surface of modern high-stakes leadership.
+          </p>
+</div>
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-secondary">vital_signs</span>
+          Symptom Architecture
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Challenge 1 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-7 flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">electric_bolt</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-semibold tracking-wider">Pattern 01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif mt-2 mb-3">
+              Executive Burnout &amp; Cortisol Overload
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Perpetual sympathetic nervous system activation, shallow micro-sleep, brain fog during mission-critical quarters, and sudden emotional fatigue.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">emergency_heat</span>
+<span>Autonomic Dysregulation</span>
+</div>
+</div>
+<!-- Challenge 2 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-7 flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">balance</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-semibold tracking-wider">Pattern 02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif mt-2 mb-3">
+              High-Stakes Decision Paralysis
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Quiet boardroom impostor syndrome, second-guessing multimillion-dollar capital allocation, and risk aversion masked as endless data analysis.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">sync_problem</span>
+<span>Subconscious Hesitation</span>
+</div>
+</div>
+<!-- Challenge 3 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-7 flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">home_repair_service</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-semibold tracking-wider">Pattern 03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif mt-2 mb-3">
+              Toxic Politics &amp; Emotional Spillover
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Internalizing hostile board dynamics, absorbing organizational toxicity, and unintentionally unloading boardroom irritation onto family and children.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">shield_with_heart</span>
+<span>Boundary Permeability</span>
+</div>
+</div>
+<!-- Challenge 4 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-7 flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">brightness_empty</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-semibold tracking-wider">Pattern 04</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif mt-2 mb-3">
+              Diminished Charisma &amp; Presence
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Speaking with strained vocal tonality, defensive micro-gestures, loss of magnetic executive aura, and losing team alignment without overt friction.
+            </p>
+</div>
+<div class="mt-6 pt-4 flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Energetic Diminishment</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Transformation Methodology (Deep Oceanic Slate Section) -->
+<section class="w-full bg-primary text-on-primary py-24 md:py-32 relative overflow-hidden" id="methodology">
+<div class="absolute -right-40 top-1/3 w-[500px] h-[500px] bg-secondary-fixed/10 blur-[150px] rounded-full pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-gutter relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed-dim block mb-3">Strategic Architecture</span>
+<h2 class="font-headline-lg text-headline-lg font-serif tracking-tight text-white">
+          The 4-Pillar Executive Transformation Methodology
+        </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim/80 mt-4 leading-relaxed">
+          Rooted in clinical neuro-linguistic programming, hypnotherapeutic de-escalation, and ancient energetic containment. Designed specifically for ruthless corporate environments.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Pillar 1 -->
+<div class="rounded-2xl bg-primary-container/70 backdrop-blur-xl p-8 md:p-10 shadow-[0_16px_36px_rgba(0,0,0,0.25)] flex flex-col justify-between hover:bg-primary-container/90 transition-all">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-full bg-secondary text-on-secondary font-serif font-bold flex items-center justify-center text-title-lg">I</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Neuro-Somatic Reset</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-serif text-white mb-4">
+              Subconscious De-escalation &amp; Autonomic Calming
+            </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim/85 leading-relaxed">
+              We reprogram conditioned high-alert responses in the amygdala. Using bespoke breath locks, somatic anchors, and vagus nerve reactivation, leaders achieve instant baseline composure in under 90 seconds during intense crises.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex flex-wrap gap-2 text-white/90">
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Vagal Tone</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Cortisol Drop</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Theta States</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="rounded-2xl bg-primary-container/70 backdrop-blur-xl p-8 md:p-10 shadow-[0_16px_36px_rgba(0,0,0,0.25)] flex flex-col justify-between hover:bg-primary-container/90 transition-all">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-full bg-secondary text-on-secondary font-serif font-bold flex items-center justify-center text-title-lg">II</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Executive Stance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-serif text-white mb-4">
+              NLP Anchoring for Boardroom Authority
+            </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim/85 leading-relaxed">
+              Establish unbreakable neurological resource states. Learn kinesthetic and linguistic micro-anchors to enter absolute confidence instantly upon taking the podium, facing an activist investor, or leading difficult restructurings.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex flex-wrap gap-2 text-white/90">
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Spatial Stance</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Vocal Resonance</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Kinesthetic Anchor</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="rounded-2xl bg-primary-container/70 backdrop-blur-xl p-8 md:p-10 shadow-[0_16px_36px_rgba(0,0,0,0.25)] flex flex-col justify-between hover:bg-primary-container/90 transition-all">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-full bg-secondary text-on-secondary font-serif font-bold flex items-center justify-center text-title-lg">III</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Sovereign Boundaries</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-serif text-white mb-4">
+              Energetic Boundary Shielding
+            </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim/85 leading-relaxed">
+              High-ranking positions attract corporate friction, subtle manipulation, and projected anxiety. We institute ancient energetic seals and submodality shielding so you process incoming hostility objectively without somatic residue.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex flex-wrap gap-2 text-white/90">
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Emotional Containment</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Zero Spillover</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Clarity Shield</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="rounded-2xl bg-primary-container/70 backdrop-blur-xl p-8 md:p-10 shadow-[0_16px_36px_rgba(0,0,0,0.25)] flex flex-col justify-between hover:bg-primary-container/90 transition-all">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="w-12 h-12 rounded-full bg-secondary text-on-secondary font-serif font-bold flex items-center justify-center text-title-lg">IV</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Bio-Mental Flow</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-serif text-white mb-4">
+              Peak State Flow Architecture
+            </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim/85 leading-relaxed">
+              Transition from adrenaline-fueled survival output to regenerative flow states. We map your circadian cognitive peaks, eliminate micro-interruptions, and design a sustainable 12-hour operational cadence without adrenal burnout.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex flex-wrap gap-2 text-white/90">
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Flow Triggers</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Circadian Alignment</span>
+<span class="px-3 py-1 rounded-full bg-teal-deep text-secondary-fixed text-label-sm uppercase tracking-wider">Effortless Stamina</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Story & Verified Review Showcase -->
+<section class="w-full bg-surface py-20 md:py-28">
+<div class="max-w-[1280px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+<!-- Review Column -->
+<div class="lg:col-span-7 flex flex-col justify-between bg-surface-container-low rounded-3xl p-8 md:p-12 shadow-sm">
+<div>
+<!-- Google Review Verified Badge -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">star</span>
+</div>
+<div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">5.0 Star Verified Corporate Feedback</span>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm tracking-wider uppercase">Executive Track</span>
+</div>
+<!-- Review Body -->
+<p class="font-headline-md text-headline-md font-serif text-primary italic leading-relaxed mt-4">
+              "After six consecutive quarters of grueling M&amp;A negotiations, I was running purely on synthetic adrenaline and sleepless anxiety. Praveen dismantled my subconscious panic loops in three sessions. I reclaimed boardroom stillness I hadn't felt in fifteen years."
+            </p>
+<div class="mt-8 flex items-center gap-4">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Distinguished professional corporate director in late 40s wearing bespoke navy blazer with calm assured smile in contemporary minimalist office, warm natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL7EHUT-B735ouP3RQH6cdVvgX7PJqyvBRU5dG3aOuwWYrfo1C8tYBDOrYcPrFvGLq1yQX4YSDCuy50KLDo1u-fyogy6gXq5VSzM_V0fi9-PdO02jlrOF9arOhtmXck-RJ4JZYDAIKKrez_sXAJHNHphHgkkVCHURnxpJBUXjyS4y4K_eC472N_k9eo3UTwAuOEnaB7Y2iaRg7AisPG5f8pgqiwbs4eZH-G1X3dF4">
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-primary">Rajesh V. Menon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senior Vice President, Global Enterprise Technology</p>
+<p class="font-label-sm text-label-sm text-secondary">Gurugram / London Hub</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-container flex flex-wrap items-center justify-between text-body-sm text-on-surface-variant gap-4">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span> 6-Month Executive Protocol</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span> Complete Sleep Metric Turnaround</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span> Promoted to Board Committee</span>
+</div>
+</div>
+<!-- 1-on-1 Confidential Protocol Blueprint -->
+<div class="lg:col-span-5 bg-primary text-on-primary rounded-3xl p-8 md:p-10 flex flex-col justify-between shadow-xl">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">lock</span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary-fixed">White-Glove Tier</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-serif text-white mb-4">
+              Strict 1-on-1 Confidentiality Charter
+            </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim/80 leading-relaxed mb-6">
+              Our work touches internal boardroom struggles, sensitive earnings pressure, personal doubts, and corporate politics. Your presence at Praveen World is cloaked in absolute legal and professional discretion.
+            </p>
+<div class="space-y-4">
+<div class="flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">shield</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-white">Full NDA Protection</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/75">Comprehensive bilateral nondisclosure agreements signed prior to discovery.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">schedule</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-white">Bespoke Timezone Agility</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/75">Early morning (6:00 AM IST) and late evening private windows tailored to global travel.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">support_agent</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-white">Direct WhatsApp Concierge</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim/75">Emergency pre-speech and pre-board meeting voice de-escalation access.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6">
+<a class="w-full inline-flex items-center justify-center gap-2 font-label-md text-label-md uppercase tracking-wider bg-secondary-container text-on-secondary-container py-3.5 px-6 rounded-full hover:brightness-105 transition-all" data-path="contact" href="contact.html">
+<span>Initiate Confidential Inquiry</span>
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive FAQ Accordion -->
+<section class="w-full bg-surface-container-low py-20 md:py-28">
+<div class="max-w-[880px] mx-auto px-gutter">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-3">Clarity &amp; Terms</span>
+<h2 class="font-headline-lg text-headline-lg font-serif text-primary tracking-tight">
+          Frequently Answered Inquiries
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">
+          Direct clarity on engagement models, confidentiality safeguards, and corporate sponsorship.
+        </p>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- Item 1 -->
+<div class="faq-item rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full px-7 py-6 text-left flex items-center justify-between gap-4 hover:bg-surface-container/50 transition-colors" type="button">
+<span class="font-title-lg text-title-lg text-primary font-serif">How is this different from standard corporate executive coaching?</span>
+<span class="faq-icon material-symbols-outlined text-secondary text-[24px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-7 pb-6 text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Standard corporate executive coaching focuses on external behavior, KPI alignment, 360-degree reviews, and management tactics. Praveen World operates at the subconscious and neuro-somatic layer. We dissolve the underlying nervous system triggers, cortisol loops, and ancient self-limiting patterns that cause hesitation, burnout, and chronic fatigue.
+          </div>
+</div>
+<!-- Item 2 -->
+<div class="faq-item rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full px-7 py-6 text-left flex items-center justify-between gap-4 hover:bg-surface-container/50 transition-colors" type="button">
+<span class="font-title-lg text-title-lg text-primary font-serif">Are sessions conducted virtually, or can we meet in person?</span>
+<span class="faq-icon material-symbols-outlined text-secondary text-[24px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-7 pb-6 text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Over 80% of our global corporate clients engage via private, encrypted high-definition video sessions with clinical efficacy identical to in-person sessions. For CXOs and executive teams seeking private immersive weekend deep-dives, intensive sessions in Delhi NCR, Mumbai, or select retreat sanctums can be organized upon arrangement.
+          </div>
+</div>
+<!-- Item 3 -->
+<div class="faq-item rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full px-7 py-6 text-left flex items-center justify-between gap-4 hover:bg-surface-container/50 transition-colors" type="button">
+<span class="font-title-lg text-title-lg text-primary font-serif">Can this program be sponsored or expensed through my enterprise?</span>
+<span class="faq-icon material-symbols-outlined text-secondary text-[24px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-7 pb-6 text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Yes. We regularly bill under enterprise professional development, executive well-being, leadership resilience, and CXO retention budgets. Formal corporate invoices, GST compliance, and enterprise procurement paperwork are seamlessly supported.
+          </div>
+</div>
+<!-- Item 4 -->
+<div class="faq-item rounded-2xl bg-surface-container-lowest overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full px-7 py-6 text-left flex items-center justify-between gap-4 hover:bg-surface-container/50 transition-colors" type="button">
+<span class="font-title-lg text-title-lg text-primary font-serif">How rapidly will I notice measurable changes in my mental focus?</span>
+<span class="faq-icon material-symbols-outlined text-secondary text-[24px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-7 pb-6 text-on-surface-variant font-body-md text-body-md leading-relaxed hidden">
+            Neuro-somatic de-escalation begins in Session 1. Most executives report measurable reductions in nocturnal panic loops and daytime decision fatigue within the first 14 days. Sustainable neural rewiring and permanent boardroom anchoring are typically solidified over our 8-week or 12-week core intensive tracks.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Luxury CTA Banner -->
+<section class="w-full bg-surface py-16 md:py-24">
+<div class="max-w-[1280px] mx-auto px-gutter">
+<div class="relative rounded-3xl bg-gradient-to-br from-primary-container via-primary to-teal-deep text-on-primary p-8 md:p-16 overflow-hidden shadow-[0_24px_60px_rgba(3,56,61,0.3)]">
+<!-- Ambient Decor Circles -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-fixed/20 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-80 h-80 bg-primary-fixed-dim/20 blur-[80px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-deep text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-4">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Exclusive Cohort Openings for Current Quarter
+            </div>
+<h2 class="font-headline-lg text-headline-lg font-serif text-white tracking-tight">
+              Reclaim Your Edge. Command With Unshakable Clarity.
+            </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim/85 mt-4 leading-relaxed max-w-2xl">
+              Do not permit accumulated executive fatigue to dictate the trajectory of your health, legacy, and high-stakes leadership. Schedule your private, confidential strategic consultation today.
+            </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-3.5">
+<a class="w-full inline-flex items-center justify-center gap-2.5 font-label-md text-label-md tracking-wider uppercase bg-secondary-container text-on-secondary-container px-7 py-4 rounded-full shadow-lg hover:scale-[1.02] transition-transform" data-path="contact" href="contact.html">
+<span>Book Discovery Session</span>
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</a>
+<a class="w-full inline-flex items-center justify-center gap-2.5 font-label-md text-label-md tracking-wider uppercase bg-primary-container text-on-primary hover:bg-teal-deep px-6 py-3.5 rounded-full transition-colors" href="https://wa.me/919719305125" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">chat</span>
+<span>Direct WhatsApp: +91 97193 05125</span>
+</a>
+<p class="text-center font-body-sm text-body-sm text-primary-fixed-dim/60 mt-1">
+              Protected by strict executive non-disclosure guidelines.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Accordion Script -->
+<script>
+    (function () {
+      const toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector('.faq-icon');
+          const isExpanded = !content.classList.contains('hidden');
+
+          // Close all
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+          if (!isExpanded) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg"><div class="max-w-[1280px] mx-auto px-gutter"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-16"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="Praveen World Logo" class="h-8 w-auto object-contain" src="assets/images/praveen-world-logo.png"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight">PRAVEEN WORLD</span></div><p class="font-headline-sm text-headline-sm italic text-secondary-fixed">Change Your Mind, Change Your Life.</p><p class="font-label-sm text-label-sm text-secondary-fixed-dim tracking-widest uppercase">REWIRE • RELEASE • TRANSFORM</p><p class="font-body-sm text-body-sm text-primary-fixed-dim/80 leading-relaxed">A transformative sanctuary uniting subconscious reprogramming, clinical neuro-linguistic programming, hypnotherapy, and ancient Vedic wisdom for peak mental mastery.</p><div class="pt-2"><span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider block mb-2">Modalities</span><div class="flex flex-wrap gap-1.5 text-label-sm"><span class="px-2.5 py-1 rounded bg-primary-container text-primary-fixed-dim">Transformational NLP</span><span class="px-2.5 py-1 rounded bg-primary-container text-primary-fixed-dim">Clinical Hypnosis</span><span class="px-2.5 py-1 rounded bg-primary-container text-primary-fixed-dim">Subconscious Rewiring</span><span class="px-2.5 py-1 rounded bg-primary-container text-primary-fixed-dim">Bio-Energetics</span></div></div><div class="flex flex-wrap items-center gap-2.5 mt-2"><a aria-label="Facebook" class="w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200" style="background-color: #1877F2;" href="https://www.facebook.com/PraveenWorldNLP" target="_blank" rel="noopener noreferrer"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a><a aria-label="Instagram" class="w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);" href="https://www.instagram.com/PraveenWorldNLP" target="_blank" rel="noopener noreferrer"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a aria-label="YouTube" class="w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200" style="background-color: #FF0000;" href="https://www.youtube.com/@PraveenWorldNLP?sub_confirmation=1" target="_blank" rel="noopener noreferrer"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a><a aria-label="X (Twitter)" class="w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200 border border-primary-container" style="background-color: #000000;" href="https://x.com/copraveenworld" target="_blank" rel="noopener noreferrer"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a><a aria-label="WhatsApp" class="w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200" style="background-color: #25D366;" href="https://wa.me/919719305125" target="_blank" rel="noopener noreferrer"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg></a><a aria-label="Telegram" class="w-9 h-9 rounded-full flex items-center justify-center text-white shadow-sm hover:scale-110 hover:shadow-md transition-all duration-200" style="background-color: #24A1DE;" href="https://t.me/PraveenWorldNLP" target="_blank" rel="noopener noreferrer"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.197 1.006.128.832.942z"></path></svg></a></div></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed-dim">Transformational Programs</span><nav class="flex flex-col gap-2.5"><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="programs.html">Subconscious Mind Mastery</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="programs.html">Executive Leadership Anchoring</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="programs.html">Clinical Hypnotherapy Deep Dive</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="programs.html">Anxiety &amp; Panic Dissolution</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="programs.html">Wealth &amp; Abundance Consciousness</a><a class="font-body-sm text-body-sm text-secondary hover:text-secondary-fixed transition-colors pt-1" href="programs.html">View All Programs →</a></nav></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed-dim">Who We Help</span><nav class="flex flex-col gap-2.5"><a aria-current="page" class="font-body-sm text-body-sm text-secondary font-bold transition-colors" data-path="corporate-professionals" href="corporate-professionals.html">Corporate Professionals &amp; CXOs</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="entrepreneurs" href="entrepreneurs.html">Entrepreneurs &amp; Founders</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="students-parents" href="students-parents.html">Student &amp; Parent Coaching</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" data-path="investors-traders" href="investors-traders.html">Investors &amp; Traders</a><a class="font-body-sm text-body-sm text-secondary hover:text-secondary-fixed transition-colors pt-1" data-path="who-we-help" href="who-we-help.html">View All Audiences →</a></nav><div class="pt-3"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim block mb-2">Explore &amp; Sanctuary</span><nav class="flex flex-col gap-2"><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="our-approach.html">Our Approach &amp; Science</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="about.html">About Praveen Singh</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary transition-colors" href="resources.html">Audio Sanctuary &amp; Mantras</a></nav></div></div><div class="flex flex-col gap-4"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed-dim">Sanctuary Connect</span><div class="flex flex-col gap-2.5"><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary flex items-center gap-2 transition-colors" href="mailto:support@praveenworld.com"><span class="material-symbols-outlined text-[16px] text-secondary">mail</span>support@praveenworld.com</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary flex items-center gap-2 transition-colors" href="mailto:contact@praveenworld.com"><span class="material-symbols-outlined text-[16px] text-secondary">alternate_email</span>contact@praveenworld.com</a><a class="font-body-sm text-body-sm text-primary-fixed-dim/75 hover:text-on-primary flex items-center gap-2 transition-colors" href="https://wa.me/919719305125" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[16px] text-secondary">call</span>+91 97193 05125</a></div><div class="pt-2 flex flex-col gap-2.5"><a class="inline-flex items-center justify-center gap-2 font-label-md text-label-md uppercase tracking-wider bg-secondary-container text-on-secondary-container px-5 py-3 rounded-full hover:brightness-105 transition-all shadow-md" href="https://rzp.io/rzp/YZQ6QlB" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[18px]">payments</span><span>Schedule Discovery Call</span></a><a class="inline-flex items-center justify-center gap-2 font-label-sm text-label-sm uppercase tracking-wider bg-primary-container text-secondary-fixed px-4 py-2.5 rounded-full hover:bg-teal-deep transition-colors" href="https://wa.me/919719305125" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[16px]">chat</span><span>WhatsApp: +91 97193 05125</span></a></div></div></div><div class="pt-6 border-t border-primary-container/60 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-primary-fixed-dim/60"><p>© 2025 Praveen World. All Rights Reserved. Mindset Mastery &amp; Inner Elevation.</p><nav class="flex items-center gap-6"><a class="hover:text-on-primary transition-colors" data-path="privacy-policy" href="privacy-policy.html">Privacy Policy</a><a class="hover:text-on-primary transition-colors" data-path="terms-conditions" href="terms-conditions.html">Terms &amp; Conditions</a><a class="hover:text-on-primary transition-colors" data-path="refund-return-policy" href="refund-return-policy.html">Refund &amp; Return Policy</a></nav></div></div></footer>
+
+<div id="yj7oe1i" style="display: none;"></div>
+
+
+
+
+
+<div id="yj7oe1i" style="display: none;"></div></body></html>
